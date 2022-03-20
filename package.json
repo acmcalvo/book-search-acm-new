@@ -1,16 +1,20 @@
 {
   "name": "book-search-acm-new",
-
   "version": "1.0.0",
-  "description": "",
-  "main": "server/server.js",
+  "description": "book-search-acm-new",
+  "main": "index.js",
+  "homepage": "https://acmcalvo.github.io/book-search-acm-new",
+  
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run start --prefix client",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+    
   },
   "keywords": [],
   "author": "",
