@@ -1,24 +1,25 @@
 {
-  "name": "book-search-acm-new",
+  "name": "googlebooks-app",
   "version": "1.0.0",
-  "description": "book-search-acm-new",
-  "main": "index.js",
-  "homepage": "https://acmcalvo.github.io/book-search-acm-new",
-  
+  "description": "",
+  "main": "server/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-    
+    "install": "cd server && npm i && cd ../client && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/acmcalvo/book-search-acm-new.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+   "if-env": "^1.0.4"
+  },
   "devDependencies": {
-    "concurrently": "^5.1.0",
-    "gh-pages": "^3.2.3"
+    "concurrently": "^5.2.0"
   }
 }
