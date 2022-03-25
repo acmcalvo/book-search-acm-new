@@ -11,8 +11,8 @@
     "build": "cd client && npm run build"
   },
   "repository": {
-    "type": "git",
-    "url": "github.com/acmcalvo/book-search-acm-new.git"
+    "type": "git"
+  
   },
   "keywords": [],
   "author": "",
